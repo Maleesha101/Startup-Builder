@@ -1,0 +1,37 @@
+{
+    "project_name": "Multi-Agent Startup Builder",
+    "version": "1.0.0",
+    "artifacts": [
+        {
+            "id": "prioritized_features",
+            "type": "json",
+            "path": "output/prioritized_features.json",
+            "description": "List of features with priority and acceptance criteria"
+        },
+        {
+            "id": "architecture",
+            "type": "json",
+            "path": "output/architecture.json",
+            "description": "Tech stack and system components"
+        },
+        {
+            "id": "tasks",
+            "type": "csv",
+            "path": "output/tasks.csv",
+            "description": "Development tasks and timeline"
+        },
+        {
+            "id": "cost_estimate",
+            "type": "csv",
+            "path": "output/cost_estimate.csv",
+            "description": "Estimated costs for the project"
+        },
+        {
+            "id": "launch_plan",
+            "type": "markdown",
+            "path": "output/launch_plan.md",
+            "description": "Marketing launch strategy"
+        }
+    ],
+    "instructions": "Run 'uvicorn api.main:app --reload' to start the builder. Use the frontend at http://localhost:8000 to generate these artifacts."
+}
